@@ -1,0 +1,16 @@
+{
+  "name": "eventsphere-management",
+  "version": "1.0.0",
+  "description": "Advanced Expo and Event Management Platform",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "client\\node_modules\\.bin\\vite.cmd client",
+    "dev": "concurrently \"node server/server.js\" \"client\\node_modules\\.bin\\vite.cmd client\"",
+    "seed": "node server/scripts/seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
